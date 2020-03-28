@@ -1,0 +1,55 @@
+$font-family-josefin: 'Josefin Sans', sans-serif;
+$font-family_aleo: 'Aleo', serif;
+
+@mixin h1 {
+    font-family: $font-family_josefin;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+@mixin h2 {
+    font-family: $font-family_aleo;
+    font-size: 36px;
+}
+
+@mixin h3 {
+    font-family: $font-family_josefin;
+    font-size: 22px;
+}
+
+@mixin h5 {
+    font-family: $font-family_josefin;
+    font-size: 20px;
+}
+
+@mixin h1 {
+    font-family: $font-family_josefin;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+@mixin logo {
+    font-family: $font-family_josefin;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@mixin text {
+    font-family: $font-family_josefin;
+    font-size: 16px;
+}
+
+@mixin nav_text {
+    font-family: $font-family_aleo;
+    font-size: 14px;
+}
+
+@mixin buttons_text {
+    font-family: $font-family_aleo;
+    font-size: 16px;
+}
+
+@mixin search_text {
+    font-family: $font-family_josefin;
+    font-size: 14px;
+}
