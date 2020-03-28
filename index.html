@@ -35,12 +35,25 @@
                 <li class="list_item"><a href="#">WHAT WE DO</a></li>
                 <li class="list_item"><a href="#">TRAVEL WITH US</a></li>
                 <li class="list_item"><a href="#">CONTACT US</a></li>
-                <li class="nav_item"><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+
+                <!-- <li class="list_item"><a href="#"><i class="fas fa-bars icon_burger"></i></a></li> -->
+                
+                <li class="nav_item"><a href="javascript:void(0);" class="icon_burger" onclick="openNav()">
                     <i class="fas fa-bars"></i>
                   </a></li>
             </ul>
         </div>
     </nav>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">WHO WE ARE</a>
+          <a href="#">WHAT WE DO</a>
+          <a href="#">TRAVEL WITH US</a>
+          <a href="#">CONTACT US</a>
+        </div>
+      </div>
 
     <main class="page_main">
         <section class="section_why">
@@ -109,7 +122,7 @@
             <h2>What Our Tourist Say</h2>
             <div class="testimonial_wrapper">
                 <div class="testimonial_wrapper_left">
-                    <img src="/images/man_small.png" alt="Main in mountains">
+                    <img src="/images/man_small.png" alt="Man in mountains" class="image_manmountain">
                 </div>
                 <div class="testimonial_wrapper_right">
                     <h5>SAM SUMON</h5>
@@ -140,7 +153,7 @@
     </main>
 
 
-    <script>
+    <!-- <script>
         function myFunction() {
           var x = document.getElementById("myTopnav");
           if (x.className === "navigation_list") {
@@ -148,6 +161,16 @@
           } else {
             x.className = "navigation_list";
           }
+        }
+    </script> -->
+
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.height = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.height = "0%";
         }
     </script>
 

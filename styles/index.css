@@ -62,7 +62,9 @@ button {
 }
 
 .search_container {
-  width: 500px;
+  max-width: 500px;
+  min-width: 300px;
+  width: 100%;
   height: 63px;
   background-color: #ffffff;
   margin-bottom: 50px;
@@ -141,7 +143,7 @@ button {
   color: #232323;
 }
 
-.navigation_list .icon {
+.navigation_list .icon_burger {
   display: none;
   text-decoration: none;
   color: #ffffff;
@@ -180,6 +182,18 @@ section {
 .why_right {
   width: 30%;
   margin-left: 50px;
+}
+
+.image_lake {
+  min-width: 300px;
+  max-width: 350px;
+  width: 100%;
+}
+
+.image_mountain_small {
+  min-width: 300px;
+  max-width: 350px;
+  width: 100%;
 }
 
 .svg_why {
@@ -275,9 +289,16 @@ section {
 .testimonial_wrapper {
   display: flex;
   width: 70%;
-  max-height: 287px;
+  min-height: 287px;
+  max-height: 900px;
   height: 100%;
   margin-top: 50px;
+}
+
+.image_manmountain {
+  min-width: 300px;
+  max-width: 445px;
+  width: 100%;
 }
 
 .testimonial_wrapper_right {
@@ -300,51 +321,73 @@ footer {
   justify-content: space-between;
 }
 
+.overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: blue;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
 @media screen and (max-width: 768px) {
+  .section_why {
+    flex-direction: column;
+  }
+
+  .why_left {
+    width: 100%;
+  }
+
+  .why_right {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .testimonial_wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+
   .navigation_list a {
     display: none;
   }
 
-  .navigation_list a.icon {
+  .navigation_list a.icon_burger {
     display: flex;
-    height: 48px;
-  }
-
-  .navigation_list.responsive {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-  }
-
-  .navigation_list.responsive .icon {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .navigation_list.responsive a {
-    display: flex;
-    height: 48px;
-  }
-
-  .navigation_list.responsive a:hover {
-    background-color: #5C7CFA;
-    color: black;
-  }
-
-  .navigation_list.responsive .list_item:nth-of-type(4) {
-    order: 1;
-  }
-
-  .navigation_list.responsive .list_item:nth-of-type(1) {
-    order: 2;
-  }
-
-  .navigation_list.responsive .list_item:nth-of-type(2) {
-    order: 3;
-  }
-
-  .navigation_list.responsive .list_item:nth-of-type(3) {
-    order: 4;
   }
 }
 
