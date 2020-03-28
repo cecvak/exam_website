@@ -17,7 +17,6 @@
     <header class="page_header">
         <h1>BHROMAON</h1>
         <h3>Safe Travel Anywhere</h3>
-        <!-- Add serach bar and button -->
         <div class="search_container">
             <form action="" class="search_form">
                 <input type="text" value="Search Your Travel Destination" class="search_text">
@@ -25,17 +24,20 @@
             </form>
         </div>
         <p class="header_text_scroll">Scroll Down</p>
-        <!-- add arrow -->
+        <p class="arrow"><i class="fas fa-chevron-down"></i></p>
     </header>
 
     <nav class="page_navigation">
         <div class="nav_wrapper">
             <div class="logo">BHROMAON</div>
-            <ul class="navigation_list">
-                <li class="list_item">WHO WE ARE</li>
-                <li class="list_item">WHAT WE DO</li>
-                <li class="list_item">TRAVEL WITH US</li>
-                <li class="list_item">CONTACT US</li>
+            <ul class="navigation_list" id="myTopnav">
+                <li class="list_item"><a href="#">WHO WE ARE</a></li>
+                <li class="list_item"><a href="#">WHAT WE DO</a></li>
+                <li class="list_item"><a href="#">TRAVEL WITH US</a></li>
+                <li class="list_item"><a href="#">CONTACT US</a></li>
+                <li class="nav_item"><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fas fa-bars"></i>
+                  </a></li>
             </ul>
         </div>
     </nav>
@@ -60,7 +62,7 @@
         </section>
 
         <section class="section_how">
-            <img src="/images/why_image.svg" alt="">
+            <img src="/images/why_image_2.svg" alt="" class="svg_why">
         </section>
 
 
@@ -138,6 +140,16 @@
     </main>
 
 
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "navigation_list") {
+            x.className += " responsive";
+          } else {
+            x.className = "navigation_list";
+          }
+        }
+    </script>
 
 </body>
 </html>
