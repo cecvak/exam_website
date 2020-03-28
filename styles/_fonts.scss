@@ -22,12 +22,6 @@ $font-family_aleo: 'Aleo', serif;
     font-size: 20px;
 }
 
-@mixin h1 {
-    font-family: $font-family_josefin;
-    font-size: 48px;
-    font-weight: bold;
-}
-
 @mixin logo {
     font-family: $font-family_josefin;
     font-size: 24px;
