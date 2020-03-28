@@ -170,25 +170,46 @@ section {
     align-content: center;
 }
 
+.why_content {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.why_header {
+    text-align: center;
+}
+
 .why_left {
-    width: 30%;
+    width: 40%;
+}
+
+.text_why {
+    line-height: 26px;
+    letter-spacing: 1.6px;
+    margin-bottom: 46px;
 }
 
 .why_right {
-    width: 30%;
+    width: 40%;
     margin-left: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 .image_lake {
-    min-width: 300px;
+    min-width: 280px;
     max-width: 350px;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .image_mountain_small {
-    min-width: 300px;
+    min-width: 280px;
     max-width: 350px;
     width: 100%;
+    align-self: flex-end;
 }
 
 .svg_why {
@@ -223,6 +244,10 @@ section {
     background-size: cover;
     height: 100%;
     min-height: 700px;
+    display: flex;
+    // align-content: flex-end;
+    // justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .spain_top_left {
@@ -230,8 +255,9 @@ section {
     height: 100%;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    align-content: center;
+    margin-bottom: 100px;
+    // align-items: center;
+    // align-content: center;
 }
 
 .spain_bottom {
@@ -243,21 +269,24 @@ section {
     min-height: 700px;
     display: flex;
     flex-direction: row-reverse;
+    align-items: flex-end;
 }
 
 .spain_bottom_right {
     width: 50%;
     height: 100%;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    align-content: center;
+    justify-content: flex-start;
+    // justify-content: flex-end;
+    margin-bottom: 100px;
 }
 
 .spain_textwrapper {
     width: 540px;
-    height: 370px;
+    min-height: 370px;
+    max-height: 400px;
     background-color: colors.$color_dark;
+    // opacity: 90%;
     // margin: 30px;
 }
 
@@ -361,6 +390,18 @@ footer {
     font-size: 60px;
   }
 
+@media screen and (max-width: 1024px) {
+
+    .spain_top_left {
+        width: 100%;
+    }
+
+    .spain_bottom_right {
+        width: 100%;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
 
     // .page_header {
@@ -372,6 +413,11 @@ footer {
         flex-direction: column;
     }
 
+    .why_content {
+        flex-direction: column;
+        width: 95%;
+    }
+
     .why_left {
         width: 100%;
     }
@@ -379,6 +425,10 @@ footer {
     .why_right {
         width: 100%;
         margin-left: 0;
+    }
+
+    .image_lake {
+        margin-top: 20px;
     }
 
     .testimonial_wrapper {
