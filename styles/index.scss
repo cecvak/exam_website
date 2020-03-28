@@ -32,7 +32,7 @@ button {
     width: 228px;
     height: 63px;
     background-color: colors.$color_blue;
-    background-image: url(/images/button_background.png);
+    background-image: url(../images/button_background.png);
     @include fonts.buttons_text;
     color: #ffffff;
     border: none;
@@ -66,7 +66,7 @@ button:hover {
     height: 100%;
     min-height: 100vh;
     margin-top: 10px;
-    background-image: url("/images/mountains.png");
+    background-image: url("../images/mountains.png");
     background-color: blue;
     background-position: center;
     background-repeat: no-repeat;
@@ -116,7 +116,7 @@ button:hover {
     color: #ffffff;
     letter-spacing: 1.4px;
     // align-self: flex-end;
-    background-image: url("/images/search-solid.svg");
+    background-image: url("../images/search-solid.svg");
     background-repeat: no-repeat;
     // background-position: 100px;
     background-position: right;
@@ -186,7 +186,7 @@ section {
 }
 
 .section_why {
-    background-image: url("/images/city.png");
+    background-image: url("../images/city.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -266,7 +266,7 @@ section {
 }
 
 .spain_top {
-    background-image: url("/images/house.png");
+    background-image: url("../images/house.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -289,7 +289,7 @@ section {
 }
 
 .spain_bottom {
-    background-image: url("/images/cliff.png");
+    background-image: url("../images/cliff.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -329,7 +329,7 @@ section {
 }
 
 .section_testimonial {
-    background-image: url("/images/man_large.png");
+    background-image: url("../images/man_large.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
