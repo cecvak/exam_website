@@ -2,6 +2,7 @@ h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 48px;
   font-weight: bold;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -12,6 +13,11 @@ h2 {
 h3 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 22px;
+}
+
+.header_h3 {
+  margin-top: 0;
+  margin-bottom: 48px;
 }
 
 h5 {
@@ -45,8 +51,15 @@ button:hover {
   height: 100%;
   min-height: 100vh;
   background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   color: #ffffff;
 }
@@ -185,10 +198,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.why_header {
-  text-align: center;
 }
 
 .why_left {
@@ -430,6 +439,10 @@ footer {
   .why_content {
     flex-direction: column;
     width: 95%;
+  }
+
+  .why_header {
+    text-align: center;
   }
 
   .why_left {
